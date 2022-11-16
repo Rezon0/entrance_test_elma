@@ -11,16 +11,23 @@ namespace вступительное_испытание_elma
                 if (i % 15 == 0)    //проверяем кратность на 15, если истина, выводим FizzBuzz
                 {
                     Console.WriteLine("FizzBuzz");
+                    continue;
                 }
-                else if (i % 5 == 0)    //проверяем кратность на 5, если истина, выводим Buzz
+
+                if (i % 5 == 0)    //проверяем кратность на 5, если истина, выводим Buzz
                 {
                     Console.WriteLine("Buzz");
+                    continue;
                 }
-                else if (i % 3 == 0)    //проверяем кратность на 3, если истина, выводим Fizz
+
+                if (i % 3 == 0)    //проверяем кратность на 3, если истина, выводим Fizz
                 {
                     Console.WriteLine("Fizz");
+                    continue;
                 }
-                else Console.WriteLine(i);  //в остальных случаях выводим i
+                
+                Console.WriteLine(i);  //в остальных случаях выводим i
+
             }
         }
     }
